@@ -75,5 +75,15 @@ Try something like:
 
 ./darknet yolo train cfg/yolo.cfg extraction.conv.weights
 
-Or you can join the aforesaid Google Group; there are many brilliant people answering questions out there.
+You can join the  Google Group; there are many brilliant people answering questions out there for anymore questions. 
 
+https://groups.google.com/forum/#!forum/darknet
+
+
+
+Things to keep in mind : 
+1. The images and training folder should be two folders with the same parent directory as in the darknet folder
+2. The training list should be just 1 file with all path names
+3. The labels flder should have the data for each image as a separate txt file. 
+4. You can change the number of  classes as shown above , be sure to create a label for each class. 
+5. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
