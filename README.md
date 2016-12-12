@@ -87,3 +87,4 @@ Things to keep in mind :
 3. The labels flder should have the data for each image as a separate txt file. 
 4. You can change the number of  classes as shown above , be sure to create a label for each class. 
 5. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
+6. Add ~500-1000 images for each class
