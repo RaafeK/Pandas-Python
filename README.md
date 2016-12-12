@@ -27,7 +27,7 @@ This fork repository also illustrates how to train a customized neural network w
 
 1. Collect Data and Annotation
 
-(1). For Videos, we can use video summary, shot boundary detection or camera take detection, to create static images.
+(1). For Videos, create static images.
 
 (2). For Images, we can use BBox-Label-Tool to label objects.
 
@@ -88,8 +88,6 @@ Therefore, in cfg/yolo.cfg, change the “output” in line 218, and “classes�
 Try something like:
 
 ./darknet yolo train cfg/yolo.cfg extraction.conv.weights
-
-If you find any problems regarding the procedure, contact me at gnxr9@mail.missouri.edu.
 
 Or you can join the aforesaid Google Group; there are many brilliant people answering questions out there.
 
