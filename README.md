@@ -1,29 +1,16 @@
-he cfg that I used is here: darknet/cfg/yolo_2class_box11.cfg
-The weights that I trained can be downloaded here: yolo_2class_box11_3000.weights
+To begin , download the darknet-2-classes folder. 
+The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
+
+Pre trained weights can be found here : https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing
 The pre-compiled software with source code package for the demo: darknet-video-2class.zip
-
-You can use this as an example. The code above is ready to run the demo.
-
-In order to run the demo on a video file, just type:
-
-./darknet yolo demo_vid cfg/yolo_2class_box11.cfg model/yolo_2class_box11_3000.weights /video/test.mp4
 
 If you would like to repeat the training process or get a feel of YOLO, you can download the data I collected and the annotations I labeled.
 
-images: images.tar.gz
+images:
 
-labels: labels.tar.gz
+labels: 
 
-I have forked the original Github repository and modified the code, so it is easier to start with. Well, it was already easy to start with but I have so far added some additional niche that might be helpful, since you do not have to do the same thing again (unless you want to do it better):
-
-(1). Read a video file, process it, and output a video with boundingboxes.
-
-(2). Some utility functions like image_to_Ipl, converting the image from darknet back to Ipl image format from OpenCV(C).
-
-(3). Adds some python scripts to label our own data, and preprocess annotations to the required format by darknet.
-(…More may be added)
-
-This fork repository also illustrates how to train a customized neural network with our own data, with our own classes.
+To start training : 
 
 1. Collect Data and Annotation
 
@@ -57,15 +44,14 @@ class_number box2_x1_ratio box2_y1_ratio box2_width_ratio box2_height_ratio
 
 ….
 
+The exact conversion techniques from bounding box from the format required can be found in the scripts/convert.py
 Note that each image corresponds to an annotation file. But we only need one single training list of images. Remember to put the folder “images” and folder “annotations” in the same parent directory, as the darknet code look for annotation files this way (by default).
 
 You can download some examples to understand the format:
 
-before_conversion.txt
+after_conversion.txt :https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/labels/yieldsign/Frame_movie_1_1.txt
 
-after_conversion.txt
-
-training_list.txt
+training_list.txt : https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt
 
 3. Modify Some Code
 
