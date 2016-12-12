@@ -88,3 +88,7 @@ Things to keep in mind :
 4. You can change the number of  classes as shown above , be sure to create a label for each class. 
 5. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
 6. Add ~500-1000 images for each class
+
+
+Testing: 
+/darknet yolo Image_path cfg/yolo_2class_box11.cfg model/yolo_2class_box11_3000.weights /video/test.mp4
