@@ -7,8 +7,8 @@ Add these weights to the Darknet-2-class folder.
 
 # To start trainig 
 
-I have provided annotations already created in the darknet folder. To use it directly,  chnage the training list to direct to the path your images are saved in. 
-To use new data to train do the following :: 
+I have provided annotations already created in the darknet folder. To use it directly,  chnage the training list to direct to the path your images are saved in.  If you are trainig on the images I have provided , skip to step 4 and start Training directly .
+Else , To use your own data to train do the following :
 
 ## 1. Collect Data 
 
