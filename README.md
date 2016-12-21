@@ -104,6 +104,10 @@ To test the trained model :
 /darknet yolo path-to-image  cfg/yolo_2class_box11.cfg  path-to-trained-weights 
 
 
+
+
+
+## More images
 More images can be found here : Multimedia Technology and Telecommunications Laboratory, University of Padova
 [Hand Gesture Dataset] (http://lttm.dei.unipd.it/downloads/gesture/senz3d/data/senz3d_dataset.zip)
 
