@@ -7,6 +7,9 @@ Add these weights to the Darknet-2-class folder.
 
 # To start trainig 
 
+I have provided annotations already created in the darknet folder. To use it directly,  chnage the training list to direct to the path your images are saved in. 
+To use new data to train do the following :: 
+
 ## 1. Collect Data 
 
 (1). For Videos, create static images.
@@ -14,6 +17,8 @@ Add these weights to the Darknet-2-class folder.
 (2). For Images, we can use matlab Image Labeller to label objects. There are a lot of bounding box labelling tools available , we can also use the [Bounding box label] (https://github.com/puzzledqs/BBox-Label-Tool)
 
 ## 2. Create Annotation 
+ 
+To label your own data : 
 
  If we choose to use our own collected data, use scripts/convert.py to convert the annotations.
 
@@ -49,7 +54,6 @@ You can download some examples to understand the format:
 [training_list.txt] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt)
 
 
-Chnage the training list to direct to the path your images are saved in. 
 
 ## 3. Modify Some Code
 
