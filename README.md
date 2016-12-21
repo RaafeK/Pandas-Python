@@ -105,9 +105,7 @@ https://groups.google.com/forum/#!forum/darknet
 # Testing: 
 To test the trained model :
 
-
-/darknet yolo path-to-image  cfg/yolo_2class_box11.cfg  path-to-trained-weights 
-
+Run: ./darknet yolo test [cfg_file] [weight_file] [img_name]
 
 
 
