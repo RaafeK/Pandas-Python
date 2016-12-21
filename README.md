@@ -2,7 +2,6 @@ To begin , download the darknet-2-classes folder.
 The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
 
 Pre trained weights can be found here : https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing
-The pre-compiled software with source code package for the demo: darknet-video-2class.zip
 
 If you would like to repeat the training process or get a feel of YOLO, you can download the data I collected and the annotations I labeled.
 
