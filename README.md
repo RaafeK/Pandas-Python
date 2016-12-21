@@ -4,7 +4,8 @@ The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
 The weights I used are :[Pre trained weights can be found here] (http://guanghan.info/download/yolo_2class_box11_3000.weights).
 
 Add these weights to the Darknet-2-class folder. 
- 
+To use opencv , go to the Makefile and chnage OPENCV=1 from OPENCV=0.
+
 
 # To start trainig 
 
