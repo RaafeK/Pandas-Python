@@ -12,13 +12,13 @@ If you would like to repeat the training process or get a feel of YOLO, you can 
 
 To start training : 
 
-1. Collect Data and Annotation
+1. Collect Data 
 
 (1). For Videos, create static images.
 
 (2). For Images, we can use matlab Image Labeller to label objects. There are a lot of bounding box labelling tools available , we can also use the Bounding box label : https://github.com/puzzledqs/BBox-Label-Tool
 
-2. Create Annotation in Darknet Format
+2. Create Annotation 
 
  If we choose to use our own collected data, use scripts/convert.py to convert the annotations.
 
@@ -83,11 +83,17 @@ https://groups.google.com/forum/#!forum/darknet
 
 
 Things to keep in mind : 
-1. The images and training folder should be two folders with the same parent directory as in the darknet folder
-2. The training list should be just 1 file with all path names
-3. The labels flder should have the data for each image as a separate txt file. 
+
+1. The images and training folder should be two folders with the same parent directory as in the sample darknet folder
+
+2. The training list should be just 1 file with  path names for all images. 
+
+3. The labels folder should have the data for each image as a separate txt file. 
+
 4. You can change the number of  classes as shown above , be sure to create a label for each class. 
+
 5. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
+
 6. Add ~500-1000 images for each class
 
 
