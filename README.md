@@ -1,7 +1,7 @@
 To begin , download the darknet-2-classes folder. 
 The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
 
-Pre trained weights can be found here : <https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing>
+[Pre trained weights can be found here] (https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing)
 Add these to the Darknet-2-class folder. 
 
 
@@ -49,9 +49,9 @@ We can also convert using Excel sheets
 
 You can download some examples to understand the format:
 
-after_conversion.txt :<https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/labels/yieldsign/Frame_movie_1_1.txt>
+[after_conversion.txt] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/labels/yieldsign/Frame_movie_1_1.txt)
 
-training_list.txt : <https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt>
+[training_list.txt] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt)
 
 3. Modify Some Code
 
