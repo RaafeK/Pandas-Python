@@ -87,4 +87,4 @@ Things to keep in mind :
 
 
 Testing: 
-/darknet yolo Image_path cfg/yolo_2class_box11.cfg model/yolo_2class_box11_3000.weights /video/test.mp4
+/darknet yolo Image_path  cfg/yolo_2class_box11.cfg  model/yolo_2class_box11_3000.weights 
