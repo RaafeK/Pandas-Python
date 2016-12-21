@@ -1,7 +1,8 @@
 To begin , download the darknet-2-classes folder. 
 
 The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
-The weights I used are :[Pre trained weights can be found here] (http://guanghan.info/download/yolo_2class_box11_3000.weights)
+The weights I used are :[Pre trained weights can be found here] (http://guanghan.info/download/yolo_2class_box11_3000.weights).
+
 Add these weights to the Darknet-2-class folder. 
  
 
