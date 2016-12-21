@@ -15,7 +15,7 @@ To start training :
 
 (1). For Videos, create static images.
 
-(2). For Images, we can use matlab Image Labeller to label objects.
+(2). For Images, we can use matlab Image Labeller to label objects. There are a lot of bounding box labelling tools available , we can also use the Bounding box label : https://github.com/puzzledqs/BBox-Label-Tool
 
 2. Create Annotation in Darknet Format
  If we choose to use our own collected data, use scripts/convert.py to convert the annotations.
