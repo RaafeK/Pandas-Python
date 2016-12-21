@@ -77,7 +77,7 @@ Therefore, in cfg/yolo.cfg, change the “output” in line 218, and “classes�
 
 ## 4. Start Training
 
-Try something like:
+Navigate to your Darknet folder on terminal and try : 
 
 ./darknet yolo train cfg/yolo.cfg extraction.conv.weights
 
