@@ -12,13 +12,13 @@ If you would like to repeat the training process or get a feel of YOLO, you can 
 
 # To start trainig 
 
-1. Collect Data 
+## 1. Collect Data 
 
 (1). For Videos, create static images.
 
 (2). For Images, we can use matlab Image Labeller to label objects. There are a lot of bounding box labelling tools available , we can also use the [Bounding box label] (https://github.com/puzzledqs/BBox-Label-Tool)
 
-2. Create Annotation 
+## 2. Create Annotation 
 
  If we choose to use our own collected data, use scripts/convert.py to convert the annotations.
 
@@ -53,7 +53,7 @@ You can download some examples to understand the format:
 
 [training_list.txt] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt)
 
-3. Modify Some Code
+## 3. Modify Some Code
 
 (1) In src/yolo.c, change class numbers and class names. (And also the paths to the training data and the annotations, i.e., the list we obtained from step 2. )
 
@@ -70,7 +70,7 @@ Therefore, in cfg/yolo.cfg, change the “output” in line 218, and “classes�
 (4) Now we are good to go. If we need to change the number of layers and experiment with various parameters, just mess with the cfg file. For the original yolo configuration, we have the pre-trained weights to start from. For arbitrary configuration, I’m afraid we have to generate pre-trained model ourselves.
 
 
-4. Start Training
+## 4. Start Training
 
 Try something like:
 
@@ -82,7 +82,7 @@ https://groups.google.com/forum/#!forum/darknet
 
 
 
-Things to keep in mind : 
+# Things to keep in mind : 
 
 1. The images and training folder should be two folders with the same parent directory as in the sample darknet folder
 
@@ -97,5 +97,8 @@ Things to keep in mind :
 6. Add ~500-1000 images for each class
 
 
-Testing: 
-/darknet yolo Image_path  cfg/yolo_2class_box11.cfg  model/yolo_2class_box11_3000.weights 
+# Testing: 
+To test the trained model :
+
+
+/darknet yolo path-to-image  cfg/yolo_2class_box11.cfg  path-to-trained-weights 
