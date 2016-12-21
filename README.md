@@ -95,9 +95,11 @@ https://groups.google.com/forum/#!forum/darknet
 
 4. You can change the number of  classes as shown above , be sure to create a label for each class. 
 
-5. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
+5. Add ~500-1000 images for each class
 
-6. Add ~500-1000 images for each class
+6. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
+
+7. If you have more than 2 classes , and don ot have the pre-trained weights tobegin thetrainig with , you will have to train from scratch. It will take considerably more time. 
 
 
 # Testing: 
