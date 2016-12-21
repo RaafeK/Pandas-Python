@@ -1,13 +1,8 @@
 To begin , download the darknet-2-classes folder. 
+
 The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
-
-[Pre trained weights can be found here] (https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing)
-Add these to the Darknet-2-class folder. 
-
-
-If you would like to repeat the training process or get a feel of YOLO, you can download the data I collected and the annotations I labeled in images folder and labels folder.
-
-
+The weights I used are :[Pre trained weights can be found here] (https://drive.google.com/file/d/0B0-t7TXfMJHOYU9TaEVILUF5RHc/view?usp=sharing)
+Add these weights to the Darknet-2-class folder. 
  
 
 # To start trainig 
