@@ -48,6 +48,9 @@ You can download some examples to understand the format:
 
 [training_list.txt] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt)
 
+
+Chnage the training list to direct to the path your images are saved in. 
+
 ## 3. Modify Some Code
 
 (1) In src/yolo.c, change class numbers and class names. (And also the paths to the training data and the annotations, i.e., the list we obtained from step 2. )
