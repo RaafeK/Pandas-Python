@@ -15,7 +15,7 @@ To start training :
 
 (1). For Videos, create static images.
 
-(2). For Images, we can use BBox-Label-Tool to label objects.
+(2). For Images, we can use matlab Image Labeller to label objects.
 
 2. Create Annotation in Darknet Format
 
