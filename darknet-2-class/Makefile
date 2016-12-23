@@ -1,4 +1,4 @@
-GPU=0
+GPU=1
 OPENCV=1
 DEBUG=0
 
