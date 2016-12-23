@@ -9,7 +9,7 @@ You will also need to download  weights to run the code , [which  can be found h
 Add these weights to the Darknet-2-class folder provided in the repository. 
 
 
-# To start training  
+## To start training  
 To train YOLO , like all neural networks , you will need images and corresponding labels. 
 I have provided images and  labels in the required format by  darknet . To use the provided images to start training directly, you only need to change the training list , provided in the darknet-folder , [here] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/training_list.txt) to direct to the path your images are saved in. 
 For example , the image path are written in the training list as : 
@@ -20,7 +20,7 @@ You can now  skip to step 4 and start Training directly .
 
 Else , To use your own images and data to train do the following :
 
-## 1. Collect Data 
+### 1. Collect Data 
 
 (1). For Videos, create static images by grabbing frames from the video and save them . 
 
@@ -31,7 +31,7 @@ Export these to an excel sheet.
 
  There are a lot of bounding box labelling tools available , we can also use the  [Bounding box label] (https://github.com/puzzledqs/BBox-Label-Tool)
 
-## 2. Create Annotation 
+### 2. Create Annotation 
  There are 2 things required for training : 
 1. Training list
 2. Boundung box information for each image
@@ -70,7 +70,7 @@ You can download some examples to understand the format:
 
 
 
-## 3. Modify Some Code
+### 3. Modify Some Code
 
 (1) In [src/yolo.c] (https://github.com/Yaffa1607/Pandas-Python/blob/master/darknet-2-class/src/yolo.c), change class numbers and class names. (And also the paths to the training data and the annotations, i.e., the list we obtained from step 2. )
 
@@ -87,7 +87,7 @@ Therefore, in [cfg/yolo.cfg] (https://github.com/Yaffa1607/Pandas-Python/blob/ma
 (4) Now we are good to go. If we need to change the number of layers and experiment with various parameters, just mess with the cfg file. For the original yolo configuration, we have the pre-trained weights to start from. For arbitrary configuration, I’m afraid we have to generate pre-trained model ourselves.
 
 
-## 4. Start Training
+### 4. Start Training
 
 Navigate to your Darknet folder on terminal and try : 
 
@@ -98,7 +98,7 @@ You can join the  Google Group; there are many brilliant people answering questi
 https://groups.google.com/forum/#!forum/darknet
 
 
-# Testing: 
+## Testing: 
 To test the trained model :
 
 Run: ./darknet yolo test [cfg_file] [weight_file] [img_name]
@@ -107,7 +107,7 @@ Run: ./darknet yolo test [cfg_file] [weight_file] [img_name]
 
 
 
-# Things to keep in mind : 
+## Things to keep in mind : 
 
 1. The images and training folder should be two folders with the same parent directory as in the sample darknet folder
 
