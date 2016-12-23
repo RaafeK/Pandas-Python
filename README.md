@@ -125,6 +125,8 @@ Run: ./darknet yolo test [cfg_file] [weight_file] [img_name]
 
 8. Although it is recommended to use opencv , since it makes visualisation easier and more interactable ,  go to the Makefile in the darknet-2-classes folder  and chnage OPENCV=0 from OPENCV=1. Navigate to the darknet folder in your terminal and  type " make clean" and then " make ".
 
+9. If you don't have CUDA , change the GPU=0. 
+
 
 
 ## More images
