@@ -1,15 +1,14 @@
-To begin , download the darknet-2-classes folder. 
+# YOLO 
+YOLO (You look only once) is an object detection and classification network that runs  real time at 155 frames per second. We implement YOLO here to detect and classify two objects in a scene. It can be extended to detect and classify multiple classes. 
+I present a method to train your own YOLO network . 
+To get a better understanding of the network ,please refer to the publication :  [YOLO ] (http://pjreddie.com/media/files/papers/yolo_1.pdf)
 
-The cfg that I used is : darknet/cfg/yolo_2class_box11.cfg
-The weights I used are :[Pre trained weights can be found here] (http://guanghan.info/download/yolo_2class_box11_3000.weights).
+To begin , download the repository. Everything needed to run the code is in the Darknet-2-classes folder provided in the repo. 
+You will also need to download  weights to run the code , [which  can be found here] (http://guanghan.info/download/yolo_2class_box11_3000.weights).
+Add these weights to the Darknet-2-class folder provided in the repository. 
 
-Add these weights to the Darknet-2-class folder. 
 
-*If you want to use opencv , go to the Makefile and chnage OPENCV=1 from OPENCV=0.
-Navigate to the darknet folder in your terminal and  type " make clean" and then " make ".*
-
-# To start trainig 
-
+# To start training  
 I have provided images and  annotations in the darknet folder. To use them directly, change the training list to direct to the path your images are saved in and  skip to step 4 and start Training directly .
 Else , To use your own data to train do the following :
 
@@ -102,6 +101,8 @@ https://groups.google.com/forum/#!forum/darknet
 6. Common errors I found were , upon training , “cannot load image”. Check your txt file for training ,there is a difference between Python2 and Python3 in treating spaces in text files.
 
 7. If you have more than 2 classes , and don ot have the pre-trained weights tobegin thetrainig with , you will have to train from scratch. It will take considerably more time. 
+
+8. *If you want to use opencv which is useful in visualisations and is recommended if you want t , go to the Makefile and chnage OPENCV=1 from OPENCV=0. Navigate to the darknet folder in your terminal and  type " make clean" and then " make ".*
 
 
 # Testing: 
